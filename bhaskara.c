@@ -3,32 +3,32 @@
 
 int main (void) {
     double a, b, c;
-    printf("Digite o valor de a: ");
+    printf("Insert the value of a: ");
     scanf("%lf", &a);
-    printf("Digite o valor de b: ");
+    printf("Insert the value of b: ");
     scanf("%lf", &b);
-    printf("Digite o valor de c: ");
+    printf("Insert the value c: ");
     scanf("%lf", &c);
     double delta = pow(b,2) - 4*a*c;
-    double raiz_delta = sqrt(delta);
+    double delta_root = sqrt(delta);
 
-    double raiz_positiva;
-    double raiz_negativa;
+    double positive_root;
+    double negative_root;
 
-    raiz_positiva = (-b + raiz_delta) / (2*a);
-    raiz_negativa = (-b - raiz_delta) / (2*a);
+    positive_root = (-b + delta_root) / (2*a);
+    negative_root = (-b - delta_root) / (2*a);
     
     if(delta > 0) {
-        printf("A equação possui duas raizes reais e distintas.\n");
-        printf("Raiz operação positiva: %.1lf\n", raiz_positiva);
-        printf("Raiz operação negativa: %.1lf\n", raiz_negativa);
+        printf("The equation has two distinct real roots.\n");
+        printf("Positive root operation: %.1lf\n", positive_root);
+        printf("Negative root operation: %.1lf\n", negative_root);
     }
     else if (delta < 0 ) {
-        printf("A equação não possui raizes reais.\n");
+        printf("The equation has no real roots.\n");
     }
     else {
-        printf("A equação possui duas raizes reais e iguais.\n");
-        printf("Raiz: %.1lf\n", raiz_positiva);
+        printf("The equation has two real and equal roots.\n");
+        printf("Root: %.1lf\n", positive_root);
     }
 
     return 0;

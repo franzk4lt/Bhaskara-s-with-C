@@ -1,4 +1,5 @@
 //To compile with GCC, use this command --> gcc -o <name> bhaskara.c -lm
+//Execute with ./<name>
 
 #include <stdio.h>
 #include <math.h>
